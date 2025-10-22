@@ -70,9 +70,9 @@ EMAIL_PASS=your_app_password
 * Start backend server:
 
 ```bash
-node server.js
+node index.js
 # or
-nodemon server.js
+nodemon index.js
 ```
 
 3. **Frontend setup**
