@@ -44,9 +44,9 @@ app.use(
 
 // Cloudinary configuration
 cloudinary.config({
-  cloud_name: "dtupm0mck",
-  api_key: "142211981314583",
-  api_secret: "V5yAg39l6qvqXOv7oYteyiJjiL4",
+  cloud_name: "<your_cloud_name>",
+  api_key: "<your_api_key>",
+  api_secret: "<your_api_secret>",
 });
 
 // Cloudinary storage setup
@@ -63,7 +63,7 @@ const upload = multer({ storage });
 async function main() {
   try {
     await mongoose.connect(
-      "mongodb+srv://rayyanhassan1688:LwBfMxgx7S5Gvrm1@hms.yifjfi2.mongodb.net/mernDb?retryWrites=true&w=majority&appName=HMS"
+      "<your_atlas_datbase_link>"
     );
     console.log("Connected to MongoDB Atlas!");
   } catch (err) {
